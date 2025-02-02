@@ -30,7 +30,7 @@ All variables in the code are set to zero or their default values. These values 
 The following images show how the LiDAR data is visualized during runtime:
 
 ### Example 1: Raw LiDAR Points
-![Raw LiDAR Points](pic.png)  
+![Raw LiDAR Points](pic2.png)  
 *This image shows the raw LiDAR points with all detected objects in the range of the LiDAR sensor.*
 
 ### Example 2: Left and Right Lane Points
