@@ -1,5 +1,0 @@
-  File "/ros2_workspace/install/track_navigation/lib/python3.10/site-packages/track_navigation/control.py", line 67
-    f linear_displacement % 0.87 == 0 and linear_displacement != 0:
-      ^^^^^^^^^^^^^^^^^^^
-SyntaxError: invalid syntax
-
