@@ -1,0 +1,4 @@
+[console_scripts]
+track_control = track_navigation.control:main
+track_race_node = track_navigation.track_race:main
+

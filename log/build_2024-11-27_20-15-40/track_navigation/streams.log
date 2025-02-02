@@ -1,0 +1,29 @@
+[0.459s] Invoking command in '/ros2_workspace/src/track_navigation': PYTHONPATH=/ros2_workspace/build/track_navigation/prefix_override:/ros2_workspace/install/track_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/track_navigation build --build-base /ros2_workspace/build/track_navigation/build install --record /ros2_workspace/build/track_navigation/install.log --single-version-externally-managed
+[0.588s] running egg_info
+[0.588s] writing ../../build/track_navigation/track_navigation.egg-info/PKG-INFO
+[0.595s] writing dependency_links to ../../build/track_navigation/track_navigation.egg-info/dependency_links.txt
+[0.595s] writing entry points to ../../build/track_navigation/track_navigation.egg-info/entry_points.txt
+[0.595s] writing requirements to ../../build/track_navigation/track_navigation.egg-info/requires.txt
+[0.595s] writing top-level names to ../../build/track_navigation/track_navigation.egg-info/top_level.txt
+[0.624s] reading manifest file '../../build/track_navigation/track_navigation.egg-info/SOURCES.txt'
+[0.624s] writing manifest file '../../build/track_navigation/track_navigation.egg-info/SOURCES.txt'
+[0.625s] running build
+[0.625s] running build_py
+[0.627s] copying track_navigation/control.py -> /ros2_workspace/build/track_navigation/build/lib/track_navigation
+[0.628s] running install
+[0.629s] running install_lib
+[0.629s] creating /ros2_workspace/install/track_navigation/lib/python3.8/site-packages/track_navigation
+[0.629s] copying /ros2_workspace/build/track_navigation/build/lib/track_navigation/track_race.py -> /ros2_workspace/install/track_navigation/lib/python3.8/site-packages/track_navigation
+[0.629s] copying /ros2_workspace/build/track_navigation/build/lib/track_navigation/control.py -> /ros2_workspace/install/track_navigation/lib/python3.8/site-packages/track_navigation
+[0.629s] copying /ros2_workspace/build/track_navigation/build/lib/track_navigation/__init__.py -> /ros2_workspace/install/track_navigation/lib/python3.8/site-packages/track_navigation
+[0.630s] byte-compiling /ros2_workspace/install/track_navigation/lib/python3.8/site-packages/track_navigation/track_race.py to track_race.cpython-38.pyc
+[0.631s] byte-compiling /ros2_workspace/install/track_navigation/lib/python3.8/site-packages/track_navigation/control.py to control.cpython-38.pyc
+[0.632s] byte-compiling /ros2_workspace/install/track_navigation/lib/python3.8/site-packages/track_navigation/__init__.py to __init__.cpython-38.pyc
+[0.632s] running install_data
+[0.633s] running install_egg_info
+[0.634s] Copying ../../build/track_navigation/track_navigation.egg-info to /ros2_workspace/install/track_navigation/lib/python3.8/site-packages/track_navigation-0.0.0-py3.8.egg-info
+[0.635s] running install_scripts
+[0.650s] Installing track_control script to /ros2_workspace/install/track_navigation/lib/track_navigation
+[0.650s] Installing track_race_node script to /ros2_workspace/install/track_navigation/lib/track_navigation
+[0.651s] writing list of installed files to '/ros2_workspace/build/track_navigation/install.log'
+[0.665s] Invoked command in '/ros2_workspace/src/track_navigation' returned '0': PYTHONPATH=/ros2_workspace/build/track_navigation/prefix_override:/ros2_workspace/install/track_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/track_navigation build --build-base /ros2_workspace/build/track_navigation/build install --record /ros2_workspace/build/track_navigation/install.log --single-version-externally-managed

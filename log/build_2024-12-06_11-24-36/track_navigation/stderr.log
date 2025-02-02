@@ -1,0 +1,5 @@
+  File "/ros2_workspace/install/track_navigation/lib/python3.10/site-packages/track_navigation/control.py", line 106
+    largest_right_gap = self.find_max_gap(ridef control_loop(self):
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
