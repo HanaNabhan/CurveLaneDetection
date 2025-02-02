@@ -30,16 +30,13 @@ All variables in the code are set to zero or their default values. These values 
 The following images show how the LiDAR data is visualized during runtime:
 
 ### Example 1: Raw LiDAR Points
-![Raw LiDAR Points](path_to_your_image/raw_lidar_points.png)
+![Raw LiDAR Points](pic.png)  
 *This image shows the raw LiDAR points with all detected objects in the range of the LiDAR sensor.*
 
 ### Example 2: Left and Right Lane Points
-![Left and Right Lane Points](path_to_your_image/lane_points.png)
+![Left and Right Lane Points](pic.png)  
 *This image shows the points separated into left and right lanes based on the polynomial fitting.*
 
-### Example 3: Lane Detection Visualization
-![Lane Detection](path_to_your_image/lane_detection.png)
-*This image shows the final lane detection, with the vehicle's predicted lane on both sides.*
 
 ## Usage
 
