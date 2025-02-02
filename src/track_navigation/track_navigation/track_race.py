@@ -31,10 +31,10 @@ class LaneCurveDetection(Node):
         self.throttle_pub = self.create_publisher(Float32, '/autodrive/f1tenth_1/throttle_command', 10)
 
         # Lane detection parameters
-        self.lane_detection_range = 5.0  # Maximum range for lane detection
-        self.min_points_for_fit = 10  # Minimum number of points needed for polynomial fitting
-        self.poly_degree = 2  # Degree of polynomial for fitting
-        self.max_steering_angle = 1.0  # Maximum steering angle in radians
+        self.lane_detection_range = 0.0  # Maximum range for lane detection
+        self.min_points_for_fit = 0.0  # Minimum number of points needed for polynomial fitting
+        self.poly_degree = 0.0  # Degree of polynomial for fitting
+        self.max_steering_angle = 0.0 # Maximum steering angle in radians
 
         # Visualization setup
         self.fig, self.ax = plt.subplots(figsize=(8, 8))
@@ -48,32 +48,20 @@ class LaneCurveDetection(Node):
 
     def lidar_callback(self, msg: LaserScan):
         # Extract LiDAR data
-        ranges = np.array(msg.ranges)
-        angles = np.linspace(msg.angle_min, msg.angle_max, len(ranges))
+        
 
         # Filter valid points
-        valid_mask = (ranges > 0.1) & (ranges < self.lane_detection_range)
-        ranges = ranges[valid_mask]
-        angles = angles[valid_mask]
+       
 
         # Convert polar to Cartesian coordinates
-        x = ranges * np.cos(angles)
-        y = ranges * np.sin(angles)
+        
 
         # Separate points into left and right lanes
-        left_points = np.array([(xi, yi) for xi, yi in zip(x, y) if yi > 0])
-        right_points = np.array([(xi, yi) for xi, yi in zip(x, y) if yi < 0])
-
+        
         # Fit polynomials to left and right lanes
-        left_poly = self.fit_polynomial(left_points)
-        right_poly = self.fit_polynomial(right_points)
-
+        
         # Control vehicle based on fitted polynomials
-        steering_angle, throttle = self.control_vehicle(left_poly, right_poly)
-
-        # Publish commands
-        self.steering_pub.publish(Float32(data=steering_angle))
-        self.throttle_pub.publish(Float32(data=throttle))
+        
 
         # Update visualization
         self.visualize_lidar(x, y, left_points, right_points)
@@ -87,16 +75,14 @@ class LaneCurveDetection(Node):
 
     def control_vehicle(self, left_poly, right_poly):
         """Calculate steering angle and throttle based on lane polynomials."""
-        target_distance = 2.0  # Distance ahead to calculate lane center
+        target_distance = 0.0  # Distance ahead to calculate lane center
 
         if right_poly:
             # Focus on the right side for steering
-            steering_angle = math.atan2(right_poly(target_distance), target_distance)
-            throttle = 0.1
+            
         else:
             # Default behavior if no lanes are visible
-            steering_angle = 0.0
-            throttle = 0.1
+            
 
         # Limit the steering angle
         steering_angle = np.clip(steering_angle, -self.max_steering_angle, self.max_steering_angle)
