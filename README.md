@@ -1,6 +1,6 @@
 # LiDAR Lane Follower with Visualization
 
-This ROS 2 node processes LiDAR data for lane following and visualizes the data in real-time.
+This ROS 2 node processes LiDAR data for lane detection and visualizes the data in real-time.
 
 ## Overview
 
