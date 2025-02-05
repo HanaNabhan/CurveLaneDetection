@@ -45,6 +45,6 @@ To run this node:
 1. Make sure ROS 2 and the required dependencies are installed.
 2. Clone this repository into your ROS 2 workspace.
 3. Build the workspace.
-4. Run the following command:
+4. Run the following command
 
 
